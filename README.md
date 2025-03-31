@@ -14,7 +14,7 @@
         img {
             border-radius: 15px;
             max-width: 30%;
-            height: auto;
+            height: 50%;
             display: block;
         }
         ul, ol {
