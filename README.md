@@ -30,6 +30,4 @@ I enjoy coding, solving complex problems, and explaining difficult concepts in a
 - Git, GitHub & Collaboration Workflows  
 
 ## 🤝 Connect With Me
-(Links zu LinkedIn, Twitter oder sonstige Plattformen kannst du hier einfügen, z. B.:)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/dein-link)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/markus-beermann-45a4ba147/#:~:text=www.linkedin.com/in/markus%2Dbeermann%2D45a4ba147)
