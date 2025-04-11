@@ -37,7 +37,7 @@ I enjoy coding, solving complex problems, and explaining tough concepts in a way
 ## 🧪 Recent Project
 **🗺️ The Ultimate Wikipedia Game**  
 *A Hackathon project where players travel across cities using links from Wikipedia – logic, exploration, and a bit of chaos included.*
-
+**🛫 The next Hackathon starts in a few days ⌛️ and will be finished after 3 days (hopefully) 🏁** 
 ---
 
 ## 📈 GitHub Stats
