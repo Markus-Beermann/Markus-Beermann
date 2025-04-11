@@ -1,7 +1,5 @@
 # 👋 Hi, I'm Markus
 
-<img src="https://i.imgur.com/clQkGcU.jpg" alt="AI and Coding" width="300"/>
-
 I'm an aspiring AI Engineer currently studying at **Masterschool**.  
 I enjoy coding, solving complex problems, and explaining tough concepts in a way even kids can understand.
 
@@ -53,3 +51,5 @@ I enjoy coding, solving complex problems, and explaining tough concepts in a way
 ---
 
 > *“Make it simple, but significant.” – Don Draper (und vermutlich auch jede gute KI irgendwann)* 😄
+
+<img src="https://i.imgur.com/clQkGcU.jpg" alt="AI and Coding" width="200"/>
