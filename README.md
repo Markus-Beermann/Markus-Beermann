@@ -1,55 +1,86 @@
 # 👋 Hi, I'm Markus
 
-I'm an aspiring AI Engineer currently studying at **Masterschool**.  
-I enjoy coding, solving complex problems, and explaining tough concepts in a way even kids can understand.
-
-> 🧠 While some are still amazed by fax machines, I'm building solutions that actually belong to the future.  
-> Digital transformation in Germany? Still a construction site. I'm here to help change that – with code and common sense.
+I'm an aspiring **AI Engineer** currently studying at **Masterschool** and working as an **AI / Software Engineering Intern**.  
+I enjoy building real systems, untangling complex problems, and explaining difficult concepts clearly — without pretending everything is magic.
 
 ---
 
-## 🚀 Currently Learning
-- Python 🐍
-- Machine Learning 🤖
-- Clean Code 💡
-- HTML, CSS & SQL 🌐
+## 🧠 About Me
+
+While some are still impressed by fax machines, I’m working on solutions that actually belong to this century.  
+Digital transformation in Germany is still very much under construction — I contribute with code, structure, and common sense.
+
+I combine:
+- technical learning (AI & backend),
+- real-world leadership and logistics experience,
+- and a strong focus on responsibility, clarity, and ethics in software.
+
+---
+
+## 🚀 Currently Learning & Working On
+
+- **Python** 🐍
+- **Machine Learning & Applied AI** 🤖
+- **Backend & API Design** (Flask, REST)
+- **Clean Code & Architecture** 💡
+- **HTML, CSS & SQL** 🌐
+- **AI Safety & Ethics**
+
+---
+
+## 🧑‍💻 Internship (Current)
+
+**AI / Software Engineering Intern**  
+Working on real production systems involving:
+- backend services
+- authentication & security flows
+- API design
+- clean architecture decisions
+- collaborative development in a professional team
+
+Learning by building, not by pretending.
+
+---
+
+## 🛡️ Personal Project: ChatGPT Youth
+
+**ChatGPT Youth** is a guardian-style AI concept focused on:
+- teen safety
+- ethical AI behavior
+- reliable escalation handling
+- transparency and responsibility by design
+
+The project explores how AI systems *should* behave when things get serious — not just when demos look good.
 
 ---
 
 ## 🧰 Tech Stack & Tools
-![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+- **Python, TypeScript**
+- **Flask**
+- **SQL / SQLite**
+- **HTML5 / CSS3**
+- **Git & GitHub**
+- **VS Code / PyCharm**
 ---
 
 ## 🎯 Favorite Topics
-- Python Programming  
-- Machine Learning  
-- AI Ethics  
-- Debugging until my coffee runs out ☕🐞
 
----
-
-## 🧪 Recent Project
-**🗺️ The Ultimate Wikipedia Game**  
-*A Hackathon project where players travel across cities using links from Wikipedia – logic, exploration, and a bit of chaos included.*
-**🛫 The next Hackathon starts in a few days ⌛️ and will be finished after 3 days (hopefully) 🏁** 
----
-
-## 📈 GitHub Stats
-![Markus' GitHub stats](https://github-readme-stats.vercel.app/api?username=Markus-Beermann&show_icons=true&theme=default)
+- Turning chaos into something that actually works
+- Python Programming
+- Applied AI & Machine Learning
+- AI Safety & Ethics
+- System thinking & debugging
 
 ---
 
 ## 🤝 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/markus-beermann-45a4ba147)
+
+- **LinkedIn: www.linkedin.com/in/markusbeermann
 
 ---
 
-> *“Make it simple, but significant.” – Don Draper (und vermutlich auch jede gute KI irgendwann)* 😄
+> “Make it simple, but significant.”  
+> — Don Draper (and probably every decent engineer, human or artificial)
 
-<img src="https://i.imgur.com/clQkGcU.jpg" alt="AI and Coding" width="200"/>
+AI • Software • Responsibility
