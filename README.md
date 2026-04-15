@@ -1,86 +1,61 @@
 # 👋 Hi, I'm Markus
 
-I'm an aspiring **AI Engineer** currently studying at **Masterschool** and working as an **AI / Software Engineering Intern**.  
-I enjoy building real systems, untangling complex problems, and explaining difficult concepts clearly — without pretending everything is magic.
+I build systems that coordinate multiple AI agents across different LLMs — reliably, traceably, and with humans in control.
+
+*(Meanwhile, parts of the real world are still running on fax.)*
 
 ---
 
-## 🧠 About Me
+## 🧠 What I Do
 
-While some are still impressed by fax machines, I’m working on solutions that actually belong to this century.  
-Digital transformation in Germany is still very much under construction — I contribute with code, structure, and common sense.
-
-I combine:
-- technical learning (AI & backend),
-- real-world leadership and logistics experience,
-- and a strong focus on responsibility, clarity, and ethics in software.
+- Design and build a multi-LLM orchestrator that decides which agent runs on which model
+- Define clear role contracts and responsibilities between agents
+- Integrate providers like OpenAI, Anthropic, DeepSeek, Perplexity, and Grok into one system
+- Build tool-routing logic to reduce unnecessary orchestration overhead
+- Keep human-in-the-loop as a core principle — with approval gates and control paths
 
 ---
 
-## 🚀 Currently Learning & Working On
+## 🎯 What Drives Me
 
-- **Python** 🐍
-- **Machine Learning & Applied AI** 🤖
-- **Backend & API Design** (Flask, REST)
-- **Clean Code & Architecture** 💡
-- **HTML, CSS & SQL** 🌐
-- **AI Safety & Ethics**
+Most AI systems look good in demos and break in real workflows.
 
----
+I focus on building infrastructure that:
+- coordinates real work across specialized agents
+- uses the right LLM for the right task
+- stays controllable and debuggable
+- scales beyond single-use prompts
 
-## 🧑‍💻 Internship (Current)
-
-**AI / Software Engineering Intern**  
-Working on real production systems involving:
-- backend services
-- authentication & security flows
-- API design
-- clean architecture decisions
-- collaborative development in a professional team
-
-Learning by building, not by pretending.
+Because reality doesn't care how good the demo looked.
+*(It also still uses fax in places.)*
 
 ---
 
-## 🛡️ Personal Project: ChatGPT Youth
+## 🛡️ Principles
 
-**ChatGPT Youth** is a guardian-style AI concept focused on:
-- teen safety
-- ethical AI behavior
-- reliable escalation handling
-- transparency and responsibility by design
-
-The project explores how AI systems *should* behave when things get serious — not just when demos look good.
+- Quality before autonomy
+- Systems must work beyond the demo
+- Transparency over black-box behavior
+- Human control is not optional
 
 ---
 
-## 🧰 Tech Stack & Tools
+## 🧰 Stack
 
-- **Python, TypeScript**
-- **Flask**
-- **SQL / SQLite**
-- **HTML5 / CSS3**
-- **Git & GitHub**
-- **VS Code / PyCharm**
----
-
-## 🎯 Favorite Topics
-
-- Turning chaos into something that actually works
-- Python Programming
-- Applied AI & Machine Learning
-- AI Safety & Ethics
-- System thinking & debugging
+TypeScript · PostgreSQL · Zod
+OpenAI & Anthropic SDKs
+Vercel · Clerk
+Vitest · GitHub
 
 ---
 
-## 🤝 Connect With Me
+## 🤝 Connect
 
-- **LinkedIn: www.linkedin.com/in/markusbeermann
+**LinkedIn:** [www.linkedin.com/in/markusbeermann](https://www.linkedin.com/in/markusbeermann)
+
+**GitHub:** [github.com/Markus-Beermann](https://github.com/Markus-Beermann) *(cortex-agentic is a private preview)*
 
 ---
 
-> “Make it simple, but significant.”  
-> — Don Draper (and probably every decent engineer, human or artificial)
-
-AI • Software • Responsibility
+> *"Quality before autonomy."*
+> — Markus Beermann
