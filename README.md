@@ -2,8 +2,6 @@
 
 I build systems that coordinate multiple AI agents across different LLMs — reliably, traceably, and with humans in control.
 
-*(Meanwhile, parts of the real world are still running on fax.)*
-
 ---
 
 ## 🧠 What I Do
@@ -59,3 +57,6 @@ Vitest · GitHub
 
 > *"Quality before autonomy."*
 > — Markus Beermann
+
+**The future runs on AI.
+Parts of the present still run on fax.**
