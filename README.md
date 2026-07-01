@@ -130,7 +130,7 @@ turning a simple workflow into a cloud dependency.
 ## How I Think About AI Engineering
 
 - Autonomy without observability is not engineering.
-- Agent roles need contracts, not just names.
+- Agent roles need contracts, not just names. They have exactly "one" identity.
 - Review and escalation are product features, not bureaucracy.
 - Provider APIs are tools; the control plane should stay yours.
 - State belongs somewhere inspectable.
