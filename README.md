@@ -5,6 +5,10 @@ review gates, and human control. My current work is centered on multi-agent
 engineering workflows: not decorative demos, but systems that can survive real
 state, real blockers, and real operator decisions.
 
+A second focus is youth safety in AI conversations: making LLM systems better at
+recognizing crisis signals from minors, especially when the signal is indirect,
+deflected, multilingual, or mixed with risk toward others.
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Markus%20Beermann-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/markusbeermann)
 [![GitHub](https://img.shields.io/badge/GitHub-Markus--Beermann-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Markus-Beermann)
 
@@ -14,6 +18,7 @@ state, real blockers, and real operator decisions.
 
 - Multi-agent AI systems with explicit roles, state, review gates, and audit trails
 - LLM-backed engineering workflows across planning, implementation, review, and release
+- Youth-safety protocols for high-risk AI conversations involving minors
 - PostgreSQL-centered control planes for agent state, lifecycle, and governance
 - Practical automation around GitHub, CI, dashboards, migrations, and operator handoffs
 - Local tools and small applications where usefulness matters more than presentation
@@ -91,15 +96,34 @@ Private multi-agent orchestration system for governed AI-assisted engineering.
 The current version focuses on role separation, DB-first state, review gates,
 audited writes, and safe handoffs between agents and human operator decisions.
 
+### [Youth Crisis Signal Protocol](https://github.com/Markus-Beermann/youth-crisis-signal-protocol)
+
+Provider-neutral safety protocol and reference prototype for high-risk youth
+crisis signals in AI conversations. The goal is to make LLM systems safer for
+minors by moving beyond generic refusals, keyword blocking, and hotline-only
+responses.
+
+The project models how an AI system can detect and route acute risk while keeping
+humans in the loop:
+
+- tiered risk evaluation from baseline support to emergency state
+- separate handling for self-harm and targeted-violence signals
+- guardian and reviewer handoff logic, including cases where home may be unsafe
+- session-abort handling where silence after an acute signal is not treated as
+  resolution
+- replayable evidence exports and a deterministic demo flow for review
+- explicit limitations around clinical validation, production deployment,
+  privacy, legal review, and jurisdiction-specific operation
+
+This is not a clinical product claim. It is a protocol and prototype for a gap I
+consider unacceptable: minors in crisis should not be met by a system that only
+answers the harmless-looking part of a dangerous message.
+
 ### [universal-converter](https://github.com/Markus-Beermann/universal-converter)
 
 Local macOS media converter built with Python, Flask, and FFmpeg. The goal is a
 small, practical utility that handles common media conversion work locally without
 turning a simple workflow into a cloud dependency.
-
-### [youth-crisis-signal-protocol](https://github.com/Markus-Beermann/youth-crisis-signal-protocol)
-
-Public exploration around signal protocols and crisis-oriented digital workflows.
 
 ---
 
@@ -120,6 +144,7 @@ Public exploration around signal protocols and crisis-oriented digital workflows
 I am building toward agentic systems that can:
 
 - coordinate work across specialized AI agents
+- make AI conversations safer for minors through explicit crisis-signal protocols
 - preserve operational memory without relying on provider-local memory
 - expose why a task is blocked, reviewed, merged, or paused
 - combine model capability with database-backed governance
