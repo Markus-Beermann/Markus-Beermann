@@ -42,39 +42,19 @@ Human operator
   -> bounded implementation / review / planning session
   -> audited lifecycle update
   -> review gate
-  -> merge authority
+  -> controlled release
   -> post-merge hygiene
 ```
 
 ### Technical Components
 
-- **Runtime and control plane**
-  - TypeScript / Node.js orchestration core
-  - PostgreSQL as the operational source of truth
-  - DB-backed task lifecycle, run questions, review state, and audit records
-  - Role-separated GUI and worker identities
-  - Fail-closed startup contracts generated from governed DB state
-
-- **Agent workflow**
-  - Dedicated roles for planning, implementation, security review, UX work,
-    orchestration, and repository mapping
-  - Bounded subagent sessions with one task, one scope, and no implicit authority
-  - Review-gated releases with current-head SHA attribution
-  - Explicit merge authority instead of "whoever has a GitHub token can merge"
-
-- **Governance and safety**
-  - PostgreSQL RLS and per-role DB access boundaries
-  - Append-only audit patterns for protected operational tables
-  - Migration checksum checks and forward-only migration discipline
-  - Baseline grant drift detection and startup readiness checks
-  - Human-in-the-loop decisions for blockers, security, and release-sensitive paths
-
-- **Interfaces and tooling**
-  - CLI tools for bootstrap, dry-runs, approvals, review queues, DB inspection,
-    event logs, and runtime checks
-  - Express API with authenticated server paths
-  - Dashboard and operational views for runs, tasks, blockers, and review status
-  - GitHub-oriented workflows for PR state, checks, review gates, and merges
+- TypeScript / Node.js orchestration core with PostgreSQL-backed lifecycle and
+  audit state
+- Role-scoped agent workflows with review-gated releases and explicit human
+  approval
+- Operational safety checks around migrations, startup readiness, and release
+  workflows
+- GitHub, CI, and dashboard integrations for controlled engineering workflows
 
 ### Provider Strategy
 
@@ -95,7 +75,7 @@ AI / LLMs:       OpenAI APIs, Anthropic SDK, multi-provider routing concepts
 Frontend:        React, Next.js, CSS, mobile-first dashboard work
 Automation:      GitHub CLI/API, CI checks, Vercel workflows, launchd/cron design
 Testing:         Vitest, integration tests, migration tests, DB contract tests
-Governance:      RLS, review gates, lifecycle state machines, operator approvals
+Governance:      Review gates, lifecycle state machines, operator approvals
 ```
 
 I am strongest where software engineering, AI systems, operational discipline,
