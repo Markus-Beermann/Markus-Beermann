@@ -1,62 +1,160 @@
-# 👋 Hi, I'm Markus
+# Hi, I'm Markus Beermann
 
-I build systems that coordinate multiple AI agents across different LLMs — reliably, traceably, and with humans in control.
+I build practical AI systems with a strong focus on orchestration, traceability,
+review gates, and human control. My current work is centered on multi-agent
+engineering workflows: not decorative demos, but systems that can survive real
+state, real blockers, and real operator decisions.
 
----
-
-## 🧠 What I Do
-
-- Design and build a multi-LLM orchestrator that decides which agent runs on which model
-- Define clear role contracts and responsibilities between agents
-- Integrate providers like OpenAI, Anthropic, DeepSeek, Perplexity, and Grok into one system
-- Build tool-routing logic to reduce unnecessary orchestration overhead
-- Keep human-in-the-loop as a core principle — with approval gates and control paths
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Markus%20Beermann-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/markusbeermann)
+[![GitHub](https://img.shields.io/badge/GitHub-Markus--Beermann-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Markus-Beermann)
 
 ---
 
-## 🎯 What Drives Me
+## What I Build
 
-Most AI systems look good in demos and break in real workflows.
+- Multi-agent AI systems with explicit roles, state, review gates, and audit trails
+- LLM-backed engineering workflows across planning, implementation, review, and release
+- PostgreSQL-centered control planes for agent state, lifecycle, and governance
+- Practical automation around GitHub, CI, dashboards, migrations, and operator handoffs
+- Local tools and small applications where usefulness matters more than presentation
 
-I focus on building infrastructure that:
-- coordinates real work across specialized agents
-- uses the right LLM for the right task
-- stays controllable and debuggable
-- scales beyond single-use prompts
-
-Because reality doesn't care how good the demo looked.
-*(It also still uses fax in places.)*
+I care about the part where agentic systems stop being impressive screenshots and
+start being operational software.
 
 ---
 
-## 🛡️ Principles
+## Cortex-Agentic
 
-- Quality before autonomy
-- Systems must work beyond the demo
-- Transparency over black-box behavior
-- Human control is not optional
+`Cortex-Agentic` is my private multi-agent AI operating system. It coordinates
+specialized agent personas through a PostgreSQL-backed orchestration layer with
+strict lifecycle tracking, review gates, and human approval for sensitive work.
+
+The system is built around one core idea:
+
+> The model may execute work, but the system owns truth, state, policy, and auditability.
+
+### Core Architecture
+
+```text
+Human operator
+  -> DB-backed task queue
+  -> role-specific agent startup contract
+  -> bounded implementation / review / planning session
+  -> audited lifecycle update
+  -> review gate
+  -> merge authority
+  -> post-merge hygiene
+```
+
+### Technical Components
+
+- **Runtime and control plane**
+  - TypeScript / Node.js orchestration core
+  - PostgreSQL as the operational source of truth
+  - DB-backed task lifecycle, run questions, review state, and audit records
+  - Role-separated GUI and worker identities
+  - Fail-closed startup contracts generated from governed DB state
+
+- **Agent workflow**
+  - Dedicated roles for planning, implementation, security review, UX work,
+    orchestration, and repository mapping
+  - Bounded subagent sessions with one task, one scope, and no implicit authority
+  - Review-gated releases with current-head SHA attribution
+  - Explicit merge authority instead of "whoever has a GitHub token can merge"
+
+- **Governance and safety**
+  - PostgreSQL RLS and per-role DB access boundaries
+  - Append-only audit patterns for protected operational tables
+  - Migration checksum checks and forward-only migration discipline
+  - Baseline grant drift detection and startup readiness checks
+  - Human-in-the-loop decisions for blockers, security, and release-sensitive paths
+
+- **Interfaces and tooling**
+  - CLI tools for bootstrap, dry-runs, approvals, review queues, DB inspection,
+    event logs, and runtime checks
+  - Express API with authenticated server paths
+  - Dashboard and operational views for runs, tasks, blockers, and review status
+  - GitHub-oriented workflows for PR state, checks, review gates, and merges
+
+### Provider Strategy
+
+Cortex-Agentic treats model providers as execution surfaces, not as the authority
+layer. OpenAI, Anthropic, and other providers can be used where they fit, but
+state, routing, lifecycle, and auditability stay under the local Cortex control
+plane.
 
 ---
 
-## 🧰 Stack
+## Technical Focus
 
-TypeScript · PostgreSQL · Zod
-OpenAI & Anthropic SDKs
-Vercel · Clerk
-Vitest · GitHub
+```text
+Languages:       TypeScript, Python, SQL, JavaScript
+Backend:         Node.js, Express, Flask
+Data:            PostgreSQL, PL/pgSQL, schema migrations, audit tables
+AI / LLMs:       OpenAI APIs, Anthropic SDK, multi-provider routing concepts
+Frontend:        React, Next.js, CSS, mobile-first dashboard work
+Automation:      GitHub CLI/API, CI checks, Vercel workflows, launchd/cron design
+Testing:         Vitest, integration tests, migration tests, DB contract tests
+Governance:      RLS, review gates, lifecycle state machines, operator approvals
+```
+
+I am strongest where software engineering, AI systems, operational discipline,
+and uncomfortable edge cases meet.
 
 ---
 
-## 🤝 Connect
+## Selected Projects
 
-**LinkedIn:** [www.linkedin.com/in/markusbeermann](https://www.linkedin.com/in/markusbeermann)
+### Cortex-Agentic
 
-**GitHub:** [github.com/Markus-Beermann](https://github.com/Markus-Beermann) *(cortex-agentic is a private preview)*
+Private multi-agent orchestration system for governed AI-assisted engineering.
+The current version focuses on role separation, DB-first state, review gates,
+audited writes, and safe handoffs between agents and human operator decisions.
+
+### [universal-converter](https://github.com/Markus-Beermann/universal-converter)
+
+Local macOS media converter built with Python, Flask, and FFmpeg. The goal is a
+small, practical utility that handles common media conversion work locally without
+turning a simple workflow into a cloud dependency.
+
+### [youth-crisis-signal-protocol](https://github.com/Markus-Beermann/youth-crisis-signal-protocol)
+
+Public exploration around signal protocols and crisis-oriented digital workflows.
 
 ---
 
-> *"Quality before autonomy."*
-> — Markus Beermann
+## How I Think About AI Engineering
 
-**The future runs on AI.
-Parts of the present still run on fax.**
+- Autonomy without observability is not engineering.
+- Agent roles need contracts, not just names.
+- Review and escalation are product features, not bureaucracy.
+- Provider APIs are tools; the control plane should stay yours.
+- State belongs somewhere inspectable.
+- If the workflow cannot survive a failed run, stale clone, bad migration, or
+  missing approval, it is not ready for serious work.
+
+---
+
+## Current Direction
+
+I am building toward agentic systems that can:
+
+- coordinate work across specialized AI agents
+- preserve operational memory without relying on provider-local memory
+- expose why a task is blocked, reviewed, merged, or paused
+- combine model capability with database-backed governance
+- remain useful when the happy path breaks
+
+That last point matters most. Real systems fail in boring ways, and the boring
+ways are where good engineering shows.
+
+---
+
+## Connect
+
+- LinkedIn: [linkedin.com/in/markusbeermann](https://www.linkedin.com/in/markusbeermann)
+- GitHub: [github.com/Markus-Beermann](https://github.com/Markus-Beermann)
+
+---
+
+> Quality before autonomy.
